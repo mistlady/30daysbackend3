@@ -1,0 +1,96 @@
+:root{
+        /* Fonts */
+        --Font-Size: 1.2rem;
+        --Font-size-quote: 28px;
+        --Font-Family: 'Manrope', sans-serif;
+        --Font-Weight: 800;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    width: 100vw;
+    background-color: #93B1A6;
+    font-size: var(--Font-Size);
+    font-family: var(--Font-Family);
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    width: 500px;
+    padding: 50px;
+    background-color: #183D3D;
+    border-radius: 8px;
+    position: relative;
+}
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+}
+
+p{
+    text-align: start;
+    margin: 20px 0;
+    color: hsl(193, 38%, 86%);
+    
+}
+
+#form1{
+    padding-top: 20px;
+    display: flex;
+    justify-content: start;
+}
+#user-task{
+   padding: 10px; 
+   border-radius: 10px;
+   width: 300px;
+}
+button{
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+article{
+    display: flex;
+}
+p{
+    border: 1px solid white;
+    color: #183D3D;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 250px;   
+}
+.flex-box {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.8rem;
+}
+input.checked{
+    width: 40px;
+    height: 40px;
+    
+}
+
+@media  screen and (max-width:600px){
+    .container {
+        width: 350px;
+        padding: 50px;
+    }
+    article{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px 70px;
+    }
+}

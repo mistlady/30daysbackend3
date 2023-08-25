@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/style/main.css")
+        title TO DO LIST 
+    body
+        div.container
+            h1 To do list
+            form(action="/", method="post" id="form1") 
+                input(type="text", name="task",id="user-task" placeholder="Enter Task")
+                button(type="submit") Add
+            each item in data
+                article 
+                    div
+                       - id = item.id 
+                        p= item.task  
+                    div.flex-box   
+                       input(type="checkbox" class="checked" ) 
+                       form(action="/delete/" + id, method="POST")
+                            button(type="submit") ✖️
